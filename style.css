@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0e0d0c;
+    color: #e3c785;
+    background-image: url('images/dark-stone-texture.png');
+    background-repeat: repeat;
+}
+
+.page-frame {
+    border: 20px solid transparent;
+    padding: 0;
+    border-image: url('images/pixel-border.png') 40 repeat;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(20, 19, 18, 0.95);
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 2px solid #5e4b2f;
+}
+
+header h1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2.5rem;
+    margin: 0;
+    color: #e3c785;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #e3c785;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #5e4b2f;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.grid img:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-top: 2px solid #5e4b2f;
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
